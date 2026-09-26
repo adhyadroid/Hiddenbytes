@@ -1,13 +1,4 @@
-# Political Donation Network Analysis. Version 1.
-
-Team: BinaryBrains
-
-**This is a separate, leaner build from the fuller prototype delivered earlier in
-this project's history.** This prompt asked for a fresh Version 1 with no
-assumed context, a small hand-built dataset, and Version 2 features (audit
-ledger, priority score, Why Flagged, evidence) explicitly left out as
-placeholders. It lives in its own folder so it does not overwrite or get
-confused with the larger build.
+# Political Donation Network Analysis.
 
 ## Purpose
 
