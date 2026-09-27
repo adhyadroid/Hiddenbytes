@@ -1,6 +1,6 @@
 # Political Donation Network Analysis
 
-An investigation and network-analysis tool for political donation data. It lets you search donors, companies, and political parties; view an entity's full profile; explore how entities are connected — directly and through multi-hop chains — on an interactive graph; walk a tamper-evident audit ledger of every transaction; see a transparent, rule-based priority score with supporting evidence; and browse it all from a filterable investigation dashboard.
+An investigation and network-analysis tool for political donation data. It lets you search donors, companies, and political parties; view an entity's full profile; explore how entities are connected ,directly and through multi-hop chains ,on an interactive graph; walk a tamper-evident audit ledger of every transaction; see a transparent, rule-based priority score with supporting evidence; and browse it all from a filterable investigation dashboard.
 
 All data in this repository is 100% synthetic. No name, company, address, phone number, or party in the dataset refers to a real person, organization, or political party. This is a transparency/investigation tool, not an accusation engine — it never asserts guilt, fraud, or wrongdoing. Language throughout is neutral: "relationship detected," "network identified," "pattern highlighted for investigation."
 
@@ -16,7 +16,7 @@ All data in this repository is 100% synthetic. No name, company, address, phone 
 ## Tech stack
 
 - **Frontend:** HTML, CSS, vanilla JavaScript (no frameworks). The network graph is drawn with the native Canvas API.
-- **Backend:** PHP, talking to MySQL through PDO. No hard-coded data in JavaScript — every page reads from the database through a PHP API.
+- **Backend:** PHP, talking to MySQL through PDO. No hard-coded data in JavaScript , every page reads from the database through a PHP API.
 - **Database:** MySQL.
 
 ## Project structure
@@ -52,7 +52,7 @@ political-donation-network-v1/
 
 - PHP 8+ with the `pdo_mysql` extension
 - MySQL (or MariaDB)
-- Any local web server stack that runs PHP against a document root — these steps use [XAMPP](https://www.apachefriends.org/) as an example, but any equivalent (MAMP, WAMP, `php -S` with a MySQL server, etc.) works the same way.
+- Any local web server stack that runs PHP against a document root ,these steps use [XAMPP](https://www.apachefriends.org/) as an example, but any equivalent (MAMP, WAMP, `php -S` with a MySQL server, etc.) works the same way.
 
 ### Installation
 
