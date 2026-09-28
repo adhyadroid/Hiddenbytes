@@ -1,9 +1,9 @@
--- ================================================================
+
 -- Political Donation Network Analysis - Version 1 schema
 -- Database: political_donation_network
 -- All data is 100% synthetic. No real people, companies or parties.
 -- Safe to re-import: drops tables first, in dependency order.
--- ================================================================
+
 
 CREATE DATABASE IF NOT EXISTS political_donation_network
     CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS directors;
 DROP TABLE IF EXISTS phone_numbers;
 DROP TABLE IF EXISTS addresses;
 
--- ----------------------------------------------------------------
+
 CREATE TABLE addresses (
     id INT PRIMARY KEY AUTO_INCREMENT,
     address_id VARCHAR(20) NOT NULL UNIQUE,
@@ -45,7 +45,7 @@ CREATE TABLE political_parties (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ----------------------------------------------------------------
+
 CREATE TABLE companies (
     id INT PRIMARY KEY AUTO_INCREMENT,
     entity_id VARCHAR(20) NOT NULL UNIQUE,
@@ -86,7 +86,6 @@ CREATE TABLE politicians (
     FOREIGN KEY (party_id) REFERENCES political_parties(id)
 );
 
--- ----------------------------------------------------------------
 CREATE TABLE donations (
     id INT PRIMARY KEY AUTO_INCREMENT,
     transaction_id VARCHAR(20) NOT NULL UNIQUE,
@@ -100,7 +99,6 @@ CREATE TABLE donations (
     INDEX (donor_type, donor_ref_id)
 );
 
--- ----------------------------------------------------------------
 -- entity_relationships: cache table, populated by
 -- api/relationships.php from actual shared-attribute data. Never
 -- hand-filled with invented connections.
