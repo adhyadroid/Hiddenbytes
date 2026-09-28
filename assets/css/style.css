@@ -1,11 +1,11 @@
-/* ================================================================
+/* 
    Political Donation Network Analysis - Version 1
    Dark investigation/network-intelligence theme.
    Palette: #07111F (page bg), #0B2545 (navy), #134074 (medium blue),
             #13315C (deep blue), #EEF4ED (light workspace, used sparingly),
             text #FFFFFF / #C8D2DC.
    Font: Lucida Sans / Lucida Sans Unicode.
-   ================================================================ */
+    */
 
 :root {
     --bg-primary: #07111F;
