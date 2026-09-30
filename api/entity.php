@@ -1,5 +1,5 @@
 <?php
-/** api/entity.php?type=donor|company|party|politician&id=IND-001 -> entity detail JSON */
+/** api/entity.php?type=donor|company|party|politician&id=IND-001 ->entity detail JSON */
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../config/helpers.php';
 require_once __DIR__ . '/../config/relationship_logic.php';
